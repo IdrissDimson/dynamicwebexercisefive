@@ -1,11 +1,9 @@
 import React from "react";
-import { UserInformation } from "../../components/UserProfileComponent";
 
-export default function UserProfile() {
+export default function UserProfileComponent() {
     return (
         <div>
-            <div>User Profile</div>
-            <UserInformation/>
+            <div>User information</div>
         </div>
     );
 }
