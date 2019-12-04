@@ -1,12 +1,12 @@
 import React from "react";
 
-export default function Login() {
+export default function LoginForm({ loginFunction }) {
     return (
         <div>
-            <form>
-                <label for="loginEmail">Email</label>
-                <input type="email" name="loginEmail"/>
-                <label for="loginPassword">Email</label>
+            <form onSubmit={e => loginFunction(e)}>
+                <label htmlFor="loginEmail">Email</label>
+                <input type="email" name="loginEmail" placeholder="email" />
+                <label htmlFor="loginPassword">Password</label>
                 <input type="password" name="loginPassword"/>
                 <button>Log In</button>
             </form>

@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function UserProfileComponent() {
+export default function UserProfileComponent({ email }) {
     return (
         <div>
-            <div>User information</div>
+            <div>Logged in user email is {email}</div>
         </div>
     );
 }
