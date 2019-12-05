@@ -5,7 +5,7 @@ export default function UserProfile({ user }) {
     console.log("user", user);
     return (
         <div>
-            <div>UserProfile for {user.uid && user.uid}</div>
+            <h1>UserProfile for {user.uid && user.uid}</h1>
             <UserInformation email={user.email ? user.email : "Error!"}/>
         </div>
     );
