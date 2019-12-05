@@ -3,7 +3,7 @@ import { Redirect, Route, BrowserRouter as Router } from "react-router-dom";
 import * as firebase from 'firebase/app';
 import "firebase/auth";
 
-import './app.css';
+import './App.css';
 
 import Header from "./components/Header";
 import Login from "./pages/Login";
