@@ -67,6 +67,7 @@ function App() {
         console.log('error', error);       
     });
   }
+
   function loginFunction(e) {
     e.preventDefault();
     let email = e.currentTarget.loginEmail.value;
@@ -82,6 +83,7 @@ function App() {
         console.log('error', error);       
     });
   }
+
   function logoutFunction() {
     firebase
       .auth()
@@ -94,6 +96,7 @@ function App() {
         console.log('error', error);
       });
   }
+  
   return (
     <div className="App">
       <Header loggedIn={loggedIn} logoutFunction={logoutFunction}/>
